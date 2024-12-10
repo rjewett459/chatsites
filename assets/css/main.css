@@ -1022,6 +1022,23 @@ section,
   color: var(--contrast-color);
 }
 
+    .pricing-item {
+        border: 1px solid #ddd; /* Light gray border */
+        border-radius: 8px;    /* Optional: rounded corners */
+        padding: 20px;         /* Add some padding for spacing */
+        background-color: #fff; /* Ensure background is white */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+        transition: transform 0.3s ease; /* Optional: smooth hover effect */
+    }
+
+    /* Optional: Add hover effect for better interactivity */
+    .pricing-item:hover {
+        transform: translateY(-5px); /* Slight lift on hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+
+
 .pricing .featured {
   width: 200px;
   position: absolute;
