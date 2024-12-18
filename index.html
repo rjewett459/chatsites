@@ -742,30 +742,39 @@ src="https://www.facebook.com/tr?id=1805675480172344&ev=PageView&noscript=1"
 
   </main>
 
-<footer id="footer" class="footer light-background">
-<div class="text-center">    <!-- Button Section -->
-    <div class="mb-3 mb-md-0">
-
+<footer id="footer" class="footer light-background py-4">
+  <div class="container text-center">
+    <!-- Button Section -->
+    <div class="mb-3">
+      <!-- Add buttons here if needed -->
     </div>
 
     <!-- Social Links -->
-    <div class="social-links d-flex justify-content-center mb-3 mb-md-0">
-      <a href="https://x.com/Chatsites_io" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
-      <a href="https://www.facebook.com/chatsites.io/" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
-      <a href="https://www.instagram.com/chatsites.io/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/company/chatsites-io" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
-        <a href="https://www.youtube.com/@ChatSites_io" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
-      </div>
+    <div class="social-links d-flex justify-content-center gap-3 mb-3">
+      <a href="https://x.com/Chatsites_io" target="_blank" rel="noopener noreferrer" class="social-icon">
+        <i class="bi bi-twitter"></i>
+      </a>
+      <a href="https://www.facebook.com/chatsites.io/" target="_blank" rel="noopener noreferrer" class="social-icon">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/chatsites.io/" target="_blank" rel="noopener noreferrer" class="social-icon">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/chatsites-io" target="_blank" rel="noopener noreferrer" class="social-icon">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://www.youtube.com/@ChatSites_io" target="_blank" rel="noopener noreferrer" class="social-icon">
+        <i class="bi bi-youtube"></i>
+      </a>
     </div>
 
-  <!-- Links -->
-    <p>
-      © <span>2024</span> 
-      <strong class="px-1 sitename">ChatSites™</strong> 
+    <!-- Links -->
+    <p class="mb-2">
+      © <span>2024</span>
+      <strong class="px-1 sitename">ChatSites™</strong>
       <span>All Rights Reserved</span>
     </p>
-    <!-- Placeholder links for policies -->
-    <div class="policy-links">
+    <div class="policy-links mb-0">
       <a href="TermsofServiceChatSitesLLC.html" target="_blank" rel="noopener noreferrer">Terms of Service</a> |
       <a href="PrivacyPolicyPlaceholder.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a> |
       <a href="GDPRPolicyPlaceholder.html" target="_blank" rel="noopener noreferrer">GDPR Policy</a> |
@@ -773,6 +782,39 @@ src="https://www.facebook.com/tr?id=1805675480172344&ev=PageView&noscript=1"
     </div>
   </div>
 </footer>
+
+<style>
+  .footer {
+    background-color: #f8f9fa; /* Light background color */
+    font-size: 14px;
+  }
+  .social-links a {
+    font-size: 20px; /* Icon size */
+    color: #6c757d; /* Neutral icon color */
+    transition: color 0.3s;
+  }
+  .social-links a:hover {
+    color: #f65228; /* Highlight color on hover */
+  }
+  .policy-links a {
+    text-decoration: none;
+    color: #6c757d;
+    transition: color 0.3s;
+  }
+  .policy-links a:hover {
+    color: #f65228; /* Highlight color on hover */
+  }
+  @media (max-width: 576px) {
+    .social-links {
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .policy-links {
+      font-size: 12px;
+    }
+  }
+</style>
+
 
 
   <!-- Scroll Top -->
