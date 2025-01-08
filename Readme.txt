@@ -1,4 +1,4 @@
 Name: ChatSites - AI Assistants
-Website URL: ChatSites.io
+Website URL: ChatSites.ai
 Author: ChatSites
-License: ChatSites.io
+License: ChatSites.ai
