@@ -1,1 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatSites™ Privacy Policy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <style>
+    /* Root Variables */
+/* Root Variables */
+:root {
+  --primary-color: #F65228;
+  --secondary-color: #EDDFC6;
+  --text-color: #212121;
+  --heading-color: #0D0D0D;
+  --font-family: 'Poppins', Arial, sans-serif;
+  --max-width: 600px;
+}
 
+/* General Styles */
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Header Section */
+header {
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header img {
+  width: 300px;
+  height: auto;
+}
+
+/* Hamburger Menu Container */
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+  background: transparent; /* Ensure no background */
+  border: none; /* Ensure no border */
+}
+
+/* Hamburger Icon */
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+  margin-top: 10px; /* Space between logo and hamburger */
+  background: transparent; /* Remove any background */
+  border: none; /* Remove any border */
+  padding: 0; /* Remove padding if not necessary */
+}
+
+/* Navigation Menu */
+.menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ff6347; /* Tomato color for the dropdown */
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1001;
+}
+
+.menu a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-align: center; /* Center the menu items */
+}
+
+.menu a:hover {
+  background-color: #ff4500;
+}
+
+/* Show menu on hover */
+.hamburger-menu:hover .menu,
+.hamburger:hover + .menu,
+.menu:hover {
+  display: flex;
+}
+
+
+/* Chat Bubble and Container Styles */
+#chatBubble {
+  position: fixed;
+  top: 35%;
+  right: 20px;
+  width: 70px;
+  height: 70px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('https://cdn.kickpages.com/img/Admin/upload/media/8449_1724964880.png');
+  z-index: 2000;
+  cursor: pointer;
+}
+
+#chatContainer {
+  display: none;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 2001;
+  width: 400px;
+  height: 500px;
+  min-width: 300px;
+  min-height: 400px;
+  max-width: 90%;
+  max-height: 90%;
+  resize: both;
+  overflow: auto;
+}
+
+#chatContainerHeader {
+  background: #FF914D;
+  color: black;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  cursor: move;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#chatContainer iframe {
+  width: 100%;
+  height: calc(100% - 50px);
+  border: none;
+}
+
+.chat-container-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: black;
+}
+
+/* Main Section */
+main h1, main h2, main p {
+  text-align: left;
+}
+
+main h2 {
+  font-size: 28px;
+  color: var(--heading-color);
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+main p {
+  font-size: 16px;
+  color: var(--text-color);
+  line-height: 1.4;
+}
+
+        .footer {
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center align items */
+            justify-content: center; /* Center justify content */
+            padding: 10px 10px 0; /* Reduced padding with zero at the bottom */
+            background-color: #F65228; /* ChatSites Orange
+            width: 100%; /* Full width */
+            margin-bottom: 0; /* Ensure no additional bottom margin */
+        }
+        .logo img {
+            width: 100px; /* Smaller logo size */
+            margin-bottom: 15px; /* Reduced space below the logo */
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center; /* Center links horizontally */
+            align-items: center; /* Center links vertically */
+            margin-bottom: 10px; /* Reduced space above the text links */
+        }
+        .social-icons img {
+            width: 25px; /* Smaller icon size */
+            height: auto;
+        }
+        .social-icons a {
+            margin: 0 10px; /* Space between icons */
+        }
+        .links {
+            display: flex;
+            justify-content: center; /* Center links horizontally */
+            align-items: center; /* Center links vertically */
+            margin-bottom: 10px; /* Reduced space above the copyright text */
+        }
+        .links a {
+            margin: 0 10px; /* Space between links */
+            color: white;
+        }
+        .copyright-text {
+            font-size: 14px; /* Smaller font size */
+            font-weight: 700; /* Bold text */
+            padding: 5px 0; /* Minimal padding for copyright */
+            margin-bottom: 0; /* No bottom margin to reduce space */
+            color: white;
+        }
+
+
+/* Top Button */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 32px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+/* Cookie Popup */
+#cookie-popup {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  display: none;
+  z-index: 9999;
+  font-family: Arial, sans-serif;
+  width: 300px;
+  border: 3px solid var(--primary-color);
+}
+
+#cookie-popup button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#accept-cookies {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#decline-cookies {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+  .header-content {
+    flex-direction: column;
+  }
+
+  #chatBubble {
+    width: 50px;
+    height: 50px;
+    right: 5%;
+  }
+
+  #chatContainer {
+    width: 90%;
+    height: 80%;
+    bottom: 10px;
+    right: 5%;
+    left: 5%;
+  }
+}
+
+
+
+
+  </style>
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+  <img src="https://i.ibb.co/ThjkVbP/Chat-Sites-UP-button-orange.png" alt="Go to top" style="width: 48px; height: 48px;">
+</button>
+<div id="cookie-popup">
+        <p>This website uses cookies to ensure you get the best experience on our website.</p>
+        <button id="accept-cookies">Accept</button>
+        <button id="decline-cookies">Decline</button>
+    </div>
+
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <img src="https://storage.googleapis.com/msgsndr/qnxcatc64SegpoFPyrEK/media/6674b0a419bb7a5590409d84.png" alt="ChatSites Logo">
+            <div class="hamburger-menu">
+                <button class="hamburger" aria-label="Toggle Menu">☰</button>
+                <nav class="menu" aria-label="Main Navigation">
+                    <a href="https://app.chatsites.io/bots/1051143/1725992035170">Home</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+            <h1>ChatSites Privacy Policy</h1>
+	<p>Effective Date: October 1, 2024</p>
+
+	<p><strong>Introduction</strong></p>
+	<p>ChatSites, LLC ("Company," "we," "us," or "our") values your privacy and is committed to protecting your personal data. This privacy policy describes how we collect, store, use, and/or share ("process") your information when you use our services ("Services"), such as when you:</p>
+	<ul>
+  <li>Visit our website at <a href="https://chatsites.io" target="_blank">https://chatsites.io</a> or any other website of ours that links to this privacy policy;</li>
+  <li>Engage with us through our ChatSites services or any related interaction, including sales, marketing, or events.</li>
+	</ul>
+
+	<h2>Personal Information We Collect</h2>
+	<p>We collect personal information you provide to us, including but not limited to:</p>
+	<ul>
+  <li>Contact details, such as your name, email address, phone number, and mailing address;</li>
+  <li>Business information, including business name, website, and preferences when using our services;</li>
+  <li>Payment information for processing transactions.</li>
+	</ul>
+	<p>We may also collect information automatically, such as:</p>
+	<ul>
+  <li>IP address, browser type, device information, and cookies to optimize your experience on our website and services.</li>
+	</ul>
+
+<h2>How We Use Your Information</h2>
+<p>We process your personal information for a variety of reasons, including:</p>
+<ul>
+  <li>To deliver, personalize, and improve our services;</li>
+  <li>To process transactions and fulfill service requests;</li>
+  <li>For marketing and promotional communications (with your consent);</li>
+  <li>To comply with legal obligations.</li>
+</ul>
+
+<h2>Sharing Your Information</h2>
+<p>We do not sell your personal information. However, we may share your data with:</p>
+<ul>
+  <li>Service providers who help us deliver our services (e.g., hosting, customer support, analytics);</li>
+  <li>Business partners for promotions (only with your consent);</li>
+  <li>Law enforcement, as required by law or to protect our rights.</li>
+</ul>
+
+<h2>Data Retention</h2>
+<p>We retain your personal information only as long as necessary to provide the services you request and for legitimate business purposes, including compliance with legal obligations.</p>
+
+<h2>Security of Your Information</h2>
+<p>We implement reasonable security measures to protect your personal data from unauthorized access, disclosure, alteration, and destruction.</p>
+
+<h2>Your Privacy Rights</h2>
+<p>You have the right to:</p>
+<ul>
+  <li>Access, update, or delete your personal information;</li>
+  <li>Opt-out of receiving marketing communications from us;</li>
+  <li>Request restriction or object to the processing of your personal data.</li>
+</ul>
+
+<h2>International Data Transfers</h2>
+<p>Your personal information may be transferred to, stored, or processed in countries other than your own, including the United States and Canada, where our offices are located:</p>
+<ul>
+  <li>USA Office: 1715 N. Channing, Mesa, AZ 85207, USA</li>
+  <li>Canada Office: 4557 Dansereau, Laval, Quebec (QC) H7T 2N6, Canada</li>
+</ul>
+<p>We will ensure appropriate safeguards are in place to protect your data in line with applicable privacy laws.</p>
+
+<h2>GDPR Compliance (European Union)</h2>
+<p>If you are located in the European Union, you have the following rights regarding your personal data:</p>
+<ul>
+  <li><strong>Right to Access</strong>: You have the right to request access to the personal data we hold about you.</li>
+  <li><strong>Right to Rectification</strong>: You can request corrections to any inaccurate or incomplete personal data.</li>
+  <li><strong>Right to Erasure</strong>: You can request that we delete your personal data ("right to be forgotten").</li>
+  <li><strong>Right to Restriction</strong>: You can ask us to restrict the processing of your personal data under certain conditions.</li>
+  <li><strong>Right to Data Portability</strong>: You have the right to receive a copy of your personal data in a machine-readable format.</li>
+  <li><strong>Right to Object</strong>: You may object to the processing of your personal data, particularly for direct marketing purposes.</li>
+  <li><strong>Right to Withdraw Consent</strong>: If we process your data based on consent, you can withdraw that consent at any time.</li>
+</ul>
+
+<h2>CCPA Compliance (California, USA)</h2>
+<p>If you are a resident of California, you have the following rights under the CCPA:</p>
+<ul>
+  <li><strong>Right to Know</strong>: You have the right to request the categories and specific pieces of personal data we have collected about you.</li>
+  <li><strong>Right to Delete</strong>: You can request that we delete the personal data we hold about you, subject to certain exceptions.</li>
+  <li><strong>Right to Opt-Out</strong>: You have the right to opt out of the sale of your personal data. [Include a "Do Not Sell My Personal Information" link if applicable].</li>
+  <li><strong>Non-Discrimination</strong>: We will not discriminate against you for exercising your CCPA rights.</li>
+</ul>
+
+<h2>PIPEDA Compliance (Canada)</h2>
+<p>If you are a resident of Canada, you have the following rights under PIPEDA:</p>
+<ul>
+  <li><strong>Right to Access</strong>: You have the right to request access to your personal data and request corrections.</li>
+  <li><strong>Consent</strong>: We require your express consent before collecting, using, or disclosing your personal information unless otherwise allowed by law.</li>
+</ul>
+
+<h2>Use of Google Services</h2>
+<p>We use certain Google services, such as Google Analytics and Google Ads, to help improve our services and deliver relevant advertisements. These services may collect and process your personal information in accordance with Google’s privacy policy.</p>
+
+<h3>Google Analytics</h3>
+<p>We use Google Analytics to collect information about how users interact with our website, such as the pages they visit and the actions they take. Google Analytics uses cookies and other tracking technologies to collect data about website usage. This information is used to analyze and improve our services.</p>
+<p>You can learn more about how Google Analytics processes data and how to opt out of this tracking by visiting the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank">Google Analytics Opt-Out Page</a>.</p>
+
+<h3>Google Ads</h3>
+<p>We use Google Ads to display personalized ads based on your browsing behavior and preferences. Google may use cookies and other technologies to track user behavior across websites. If you prefer not to receive personalized ads, you can adjust your ad settings through the <a href="https://adssettings.google.com/" target="_blank">Google Ad Settings Page</a>.</p>
+
+<h3>Google APIs and SDKs</h3>
+<p>If our app uses Google APIs or SDKs, these services may collect certain information, such as your device's unique identifier, location data, and usage patterns. This information is processed according to Google's terms and may be shared with Google for improving services and providing relevant content.</p>
+<p>For more details on how Google collects and processes your data, please review the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.</p>
+
+<h2>Data Breach Notification</h2>
+<p>In the event of a data breach, we will notify you and the relevant regulatory authority as required by law. If there is a significant risk to your rights and freedoms, we will inform you promptly and take appropriate steps to mitigate the impact.</p>
+
+<h2>Cookies and Tracking Technologies</h2>
+<p>We use cookies and other tracking technologies to enhance your experience on our website. You can control the use of cookies through your browser settings. For more information on how we use cookies, please review our <a href="/cookie-policy" target="_blank">Cookie Policy</a>.</p>
+
+<h2>Children’s Privacy</h2>
+<p>Our services are not intended for children under 16 years old. We do not knowingly collect personal information from children. If you believe that we have collected information from a minor, please contact us so we can delete it.</p>
+
+<h2>Changes to This Privacy Policy</h2>
+<p>We may update this privacy policy from time to time. The updated version will be indicated by a revised "Effective Date," and the new policy will be effective as soon as it is accessible.</p>
+
+<h2>Contact Us</h2>
+<p>If you have any questions or concerns about this privacy policy or your personal information, please contact us at:</p>
+<p>Email: <a href="mailto:support@chatsites.io">support@chatsites.io</a></p>
+
+    </main>
+
+     <!-- Footer Section -->
+    <div class="footer">
+        <div class="logo">
+            <img src="https://i.ibb.co/D1LFyBL/Chat-Sites-dark.png" alt="ChatSites Logo">
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/chatsites.io"><img src="https://cdn3.iconfinder.com/data/icons/social-media-2253/17/Vector-2-128.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/chatsites.io"><img src="https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Instagram_svg-256.png" alt="Instagram"></a>
+            <a href="https://x.com/Chatsites_io"><img src="https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Twitter5_svg-256.png" alt="X (formerly Twitter)"></a>
+            <a href="https://www.linkedin.com/company/chatsites-io"><img src="https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Linkedin2_svg-256.png" alt="LinkedIn"></a>
+            <a href="https://www.youtube.com/@ChatSites_io"><img src="https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Youtube3_svg-256.png" alt="YouTube"></a>
+        </div>
+        <div class="links">
+            <a href="https://app.chatsites.io/bots/1051143/172651336980">Privacy</a>
+            <a href="https://app.chatsites.io/bots/1051143/172651334032">Terms</a>
+            <a href="https://app.chatsites.io/bots/1051143/1726325659991">Cookies</a>
+        </div>
+        <div class="copyright-text">
+            © 2024 ChatSites™, LLC. All rights reserved.
+        </div>
+    </div>
+
+      
+
+<!-- Draggable Chat Bubble and Container -->
+  <div id="chatBubble" aria-label="Open Chat"></div>
+  <div id="chatContainer">
+    <div id="chatContainerHeader">
+      You can Drag and Resize me!
+      <button class="chat-container-close" aria-label="Close Chat Container">×</button>
+    </div>
+    <iframe src="https://app.chatsites.io/bots/1051143/1724707129270" title="ChatBot"></iframe>
+  </div>
+
+<script>
+// scripts.js
+// Top button functionality
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+    // Hamburger menu functionality
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu');
+
+    hamburger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    });
+
+    document.addEventListener('click', function(event) {
+      if (!hamburgerMenu.contains(event.target)) {
+        menu.style.display = 'none';
+      }
+    });
+
+    // Chat functionality
+    const chatBubble = document.getElementById('chatBubble');
+    const chatContainer = document.getElementById('chatContainer');
+    const chatContainerClose = document.querySelector('.chat-container-close');
+
+    chatBubble.addEventListener('click', function () {
+      chatContainer.style.display = 'block';
+    });
+
+    chatContainerClose.addEventListener('click', function () {
+      chatContainer.style.display = 'none';
+    });
+
+    // Make elements draggable
+    function makeDraggable(dragHandle, dragTarget) {
+      let initialX, initialY, offsetX = 0, offsetY = 0;
+
+      dragHandle.addEventListener('mousedown', startDragging);
+      dragHandle.addEventListener('touchstart', startTouchDragging, { passive: false });
+
+      function startDragging(event) {
+        event.preventDefault();
+        initialX = event.clientX - dragTarget.getBoundingClientRect().left;
+        initialY = event.clientY - dragTarget.getBoundingClientRect().top;
+        document.addEventListener('mousemove', drag);
+        document.addEventListener('mouseup', stopDragging);
+      }
+
+      function startTouchDragging(event) {
+        initialX = event.touches[0].clientX - dragTarget.getBoundingClientRect().left;
+        initialY = event.touches[0].clientY - dragTarget.getBoundingClientRect().top;
+        document.addEventListener('touchmove', dragTouch, { passive: false });
+        document.addEventListener('touchend', stopTouchDragging);
+      }
+
+      function drag(event) {
+        event.preventDefault();
+        offsetX = event.clientX - initialX;
+        offsetY = event.clientY - initialY;
+        setTranslate(offsetX, offsetY, dragTarget);
+      }
+
+      function dragTouch(event) {
+        event.preventDefault();
+        offsetX = event.touches[0].clientX - initialX;
+        offsetY = event.touches[0].clientY - initialY;
+        setTranslate(offsetX, offsetY, dragTarget);
+      }
+
+      function stopDragging() {
+        document.removeEventListener('mousemove', drag);
+        document.removeEventListener('mouseup', stopDragging);
+      }
+
+      function stopTouchDragging() {
+        document.removeEventListener('touchmove', dragTouch);
+        document.removeEventListener('touchend', stopTouchDragging);
+      }
+
+      function setTranslate(xPos, yPos, el) {
+        const minLeft = 0;
+        const maxLeft = window.innerWidth - el.offsetWidth;
+        const minTop = 0;
+        const maxTop = window.innerHeight - el.offsetHeight;
+
+        xPos = Math.max(minLeft, Math.min(maxLeft, xPos));
+        yPos = Math.max(minTop, Math.min(maxTop, yPos));
+
+        el.style.left = xPos + 'px';
+        el.style.top = yPos + 'px';
+        el.style.transform = 'none';
+      }
+    }
+
+// Apply draggable functionality
+makeDraggable(document.getElementById('chatContainerHeader'), chatContainer);
+makeDraggable(chatBubble, chatBubble);
+
+// Cookie consent functionality
+function setCookie(name, value, days) {
+  const date = new Date();
+  date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+  const expires = "expires=" + date.toUTCString();
+  document.cookie = name + "=" + value + ";" + expires + ";path=/";
+}
+
+function getCookie(name) {
+  const cookieName = name + "=";
+  const decodedCookie = decodeURIComponent(document.cookie);
+  const cookieArray = decodedCookie.split(';');
+  for(let i = 0; i < cookieArray.length; i++) {
+    let cookie = cookieArray[i].trim();
+    if (cookie.indexOf(cookieName) == 0) {
+      return cookie.substring(cookieName.length, cookie.length);
+    }
+  }
+  return "";
+}
+
+function checkCookieConsent() {
+  if (getCookie("cookieConsent") !== "accepted") {
+    document.getElementById("cookie-popup").style.display = "block";
+  }
+}
+
+document.getElementById("accept-cookies").addEventListener("click", function() {
+  setCookie("cookieConsent", "accepted", 365);
+  document.getElementById("cookie-popup").style.display = "none";
+});
+
+document.getElementById("decline-cookies").addEventListener("click", function() {
+  document.getElementById("cookie-popup").style.display = "none";
+  // Handle decline behavior here
+});
+
+window.onload = checkCookieConsent;
+
+// Lazy loading for images
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+
+  if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target;
+          lazyImage.src = lazyImage.dataset.src;
+          lazyImage.classList.remove("lazy");
+          lazyImageObserver.unobserve(lazyImage);
+        }
+      });
+    });
+
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage);
+    });
+  } else {
+    // Fallback for browsers that don't support IntersectionObserver
+    // You can implement a simple scroll event listener here
+  }
+});
+
+    </script>
+</body>
+</html>
