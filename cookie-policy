@@ -1,0 +1,73 @@
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+  <img src="https://i.ibb.co/ThjkVbP/Chat-Sites-UP-button-orange.png" alt="Go to top" style="width: 48px; height: 48px;">
+</button>
+<div id="cookie-popup">
+        <p>This website uses cookies to ensure you get the best experience on our website.</p>
+        <button id="accept-cookies">Accept</button>
+        <button id="decline-cookies">Decline</button>
+    </div>
+
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <img src="https://storage.googleapis.com/msgsndr/qnxcatc64SegpoFPyrEK/media/6674b0a419bb7a5590409d84.png" alt="ChatSites Logo">
+            <div class="hamburger-menu">
+                <button class="hamburger" aria-label="Toggle Menu">☰</button>
+                <nav class="menu" aria-label="Main Navigation">
+                    <a href="https://app.chatsites.io/bots/1051143/1725992035170">Home</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Additional content can go here -->
+  
+  <!-- Cookie Policy -->
+  <div class="cookie-policy">
+    <h1>ChatSites™ Cookies Policy</h1>
+    <p>Effective Date: 4/29/2024</p>
+    <p>Welcome to ChatSites™! Our Cookies Policy explains how we, ChatSites, LLC, use cookies and similar technologies to recognize you when you visit our platforms, including without limitation our website and mobile applications ("Websites"). It explains what these technologies are and why we use them, as well as your rights to control our use of them.</p>
+
+    <h2>What are cookies?</h2>
+    <p>Cookies are small data files that are placed on your computer or mobile device when you visit a website. Cookies are widely used by website owners to make their websites work, or to work more efficiently, as well as to provide reporting information.</p>
+
+    <h2>Why do we use cookies?</h2>
+    <ul>
+      <li><strong>Essential Website Cookies:</strong> These cookies are strictly necessary to provide you with services available through our Websites and to use some of its features, such as access to secure areas.</li>
+      <li><strong>Performance and Functionality Cookies:</strong> These cookies are used to enhance the performance and functionality of our Websites but are non-essential to their use. However, without these cookies, certain functionality (like videos) may become unavailable.</li>
+      <li><strong>Analytics and Customization Cookies:</strong> These cookies collect information that is used either in aggregate form to help us understand how our Websites are being used or how effective our marketing campaigns are, or to help us customize our Websites for you.</li>
+      <li><strong>Advertising Cookies:</strong> These cookies are used to make advertising messages more relevant to you.</li>
+      <li><strong>Social Networking Cookies:</strong> These cookies are used to enable you to share pages and content that you find interesting on our Websites through third party social networking and other websites.</li>
+    </ul>
+
+    <p>More Information: If you have any questions about our use of cookies or other technologies, please email us at <a href="mailto:support@ChatSites.io">support@ChatSites.io</a>.</p>
+
+    <p>ChatSites, LLC<br>1715 N Channing, Mesa, AZ 85207. USA<br><a href="mailto:support@ChatSites.io">support@ChatSites.io</a></p>
+  </div>
+
+
+     <!-- Footer Section -->
+    <div class="footer">
+        <div class="logo">
+            <img src="https://i.ibb.co/D1LFyBL/Chat-Sites-dark.png" alt="ChatSites Logo">
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/chatsites.io"><img src="https://cdn3.iconfinder.com/data/icons/social-media-2253/17/Vector-2-128.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/chatsites.io"><img src="https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Instagram_svg-256.png" alt="Instagram"></a>
+            <a href="https://x.com/Chatsites_io"><img src="https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Twitter5_svg-256.png" alt="X (formerly Twitter)"></a>
+            <a href="https://www.linkedin.com/company/chatsites-io"><img src="https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Linkedin2_svg-256.png" alt="LinkedIn"></a>
+            <a href="https://www.youtube.com/@ChatSites_io"><img src="https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Youtube3_svg-256.png" alt="YouTube"></a>
+        </div>
+        <div class="links">
+            <a href="https://app.chatsites.io/bots/1051143/172651336980">Privacy</a>
+            <a href="https://app.chatsites.io/bots/1051143/172651334032">Terms</a>
+            <a href="https://app.chatsites.io/bots/1051143/1726325659991">Cookies</a>
+        </div>
+        <div class="copyright-text">
+            © 2024 ChatSites™, LLC. All rights reserved.
+        </div>
+    </div>
