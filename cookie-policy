@@ -120,3 +120,37 @@
             © 2024 ChatSites™, LLC. All rights reserved.
         </div>
     </div>
+</section>
+
+        <div class="one_line_col">
+          <h2>Data Protection Officer</h2>
+          <p>We have appointed a Data Protection Officer (DPO) who is responsible for overseeing questions in relation to this policy. If you have any questions about this privacy notice, including any requests to exercise your legal rights, please contact the DPO using the details set out below.</p>
+          <p><strong>Contact details:</strong></p>
+          <p>Data Protection Officer (DPO): Rick Jewett<br>
+          ChatSites LLC.<br>
+          Email: support@chatsites.io<br>
+          Address: 1715 N. Channing Mesa Arizona 85207 USA</p>
+        </div>
+
+        <div class="iub_footer">
+          <p>Latest update: January 8th, 2025</p>
+        </div> <!-- /footer -->
+
+      </div> <!-- /content -->
+    </div> <!-- /wbars -->
+  </div> <!-- /container base_container -->
+</div> <!-- /wbars_wrapper -->
+
+
+  <script type="text/javascript">
+    var privacyPolicy = new PrivacyPolicy({
+      id:1979786,
+      noBrand:true
+    })
+    $(document).ready(function() {
+      privacyPolicy.start();
+    });
+  </script>
+
+</body>
+</html>
