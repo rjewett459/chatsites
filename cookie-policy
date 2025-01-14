@@ -2,14 +2,14 @@
 <html id="i_policy" class="iubenda_fixed_policy js-focus-visible" lang="en" data-js-focus-visible="">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>GDPR Compliance</title>
+  <title>Cookie Policy</title>
   <meta http-equiv="Content-Language" content="en">
   <link rel="shortcut icon" href="https://i.ibb.co/vs16hPs/Chat-Sites-400-x-400-px.png" />
-  <meta itemprop="name" content="GDPR Compliance">
+  <meta itemprop="name" content="Cookie Policy">
   <meta itemprop="image" content="https://i.ibb.co/vs16hPs/Chat-Sites-400-x-400-px.png">
   <meta name="locale" content="en">
-  <meta name="title" content="GDPR Compliance for ChatSites LLC.">
-  <meta name="description" content="GDPR Compliance for ChatSites LLC.">
+  <meta name="title" content="Cookie Policy for ChatSites LLC.">
+  <meta name="description" content="Cookie Policy for ChatSites LLC.">
   <meta name="image" content="https://i.ibb.co/vs16hPs/Chat-Sites-400-x-400-px.png"> 
   <meta name="viewport" content="width=device-width">
   <meta name="robots" content="noindex, follow">
@@ -56,20 +56,6 @@
         <button id="accept-cookies">Accept</button>
         <button id="decline-cookies">Decline</button>
     </div>
-
-
-    <!-- Header Section -->
-    <header>
-        <div class="header-content">
-            <img src="https://storage.googleapis.com/msgsndr/qnxcatc64SegpoFPyrEK/media/6674b0a419bb7a5590409d84.png" alt="ChatSites Logo">
-            <div class="hamburger-menu">
-                <button class="hamburger" aria-label="Toggle Menu">☰</button>
-                <nav class="menu" aria-label="Main Navigation">
-                    <a href="https://app.chatsites.io/bots/1051143/1725992035170">Home</a>
-                </nav>
-            </div>
-        </div>
-    </header>
 
   <!-- Main Content -->
   <div class="container">
