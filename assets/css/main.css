@@ -283,6 +283,14 @@ h6 {
     visibility: visible;
   }
 }
+@media (max-width: 768px) {
+  #header {
+    padding: 10px 15px;
+  }
+  .logo img {
+    max-width: 120px;
+  }
+}
 
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
