@@ -1,32 +1,19 @@
 const express = require('express');
-const fetch = require('node-fetch');
+const path = require('path');
 require('dotenv').config();
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
-app.use(express.json());
+// Serve static files from the root or "public" folder
+app.use(express.static(path.join(__dirname)));
 
-app.post('/generate-speech', async (req, res) => {
-    try {
-        const response = await fetch("https://api-inference.huggingface.co/models/kokoro-ai/kokoro-onnx", {
-            method: "POST",
-            headers: {
-                "Authorization": `Bearer ${process.env.HF_API_KEY}`,
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({ inputs: req.body.text })
-        });
-
-        if (!response.ok) {
-            throw new Error("API request failed");
-        }
-
-        const audioData = await response.blob();
-        res.status(200).send(audioData);
-    } catch (error) {
-        res.status(500).json({ error: error.message });
-    }
+// Route fallback to index.html
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+
