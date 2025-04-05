@@ -764,33 +764,7 @@ src="https://www.facebook.com/tr?id=1805675480172344&ev=PageView&noscript=1"
     </section><!-- /Contact Section -->
 
   </main>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const faqItems = document.querySelectorAll('.faq-item');
 
-    faqItems.forEach(item => {
-      const toggle = item.querySelector('h3');
-
-      toggle.addEventListener('click', () => {
-        const isActive = item.classList.contains('faq-active');
-
-        // Close all open items
-        faqItems.forEach(i => {
-          i.classList.remove('faq-active');
-          i.querySelector('.faq-content').style.display = 'none';
-          i.querySelector('.faq-toggle')?.classList.remove('rotated');
-        });
-
-        // Toggle current item
-        if (!isActive) {
-          item.classList.add('faq-active');
-          item.querySelector('.faq-content').style.display = 'block';
-          item.querySelector('.faq-toggle')?.classList.add('rotated');
-        }
-      });
-    });
-  });
-</script>
 
 <footer id="footer" class="footer light-background py-4">
   <div class="container text-center">
