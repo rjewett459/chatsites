@@ -87,23 +87,6 @@ h6 {
   font-family: var(--heading-font);
 }
 
-.faq-content {
-  display: none;
-  transition: all 0.3s ease;
-}
-
-.faq-active .faq-content {
-  display: block;
-}
-
-.faq-toggle {
-  transition: transform 0.3s ease;
-}
-
-.faq-toggle.rotated {
-  transform: rotate(90deg);
-}
-
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
